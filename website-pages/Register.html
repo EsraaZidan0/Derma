@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="CSS/other-pages.css">
+    <link rel="stylesheet" href="CSS/all.css">
+</head>
+
+<body>
+    <!---------------------    signup   ------------------------>
+
+    <section id="register" class="sign-sec">
+
+        <div class="sign-parent">
+
+            <div class="div-logo">
+                <img src="../website-Images/Derma6.png" alt="">
+            </div>
+
+            <h2 class="sign-head">Register</h2>
+
+            <span class="sign-txt animate__animated animate__zoomIn" style="animation-delay: .3s;"> Welcome </span>
+            <span class="sign-txt2 animate__animated animate__zoomIn" style="animation-delay: .4s;"> Here </span>
+            <i class="fas fa-smile-beam i-sign animate__animated animate__zoomIn" style="animation-delay: .6s;"></i>
+            <div class="sign-img-form-container">
+                <div class="sign-img">
+                </div>
+                <div class="sign-form">
+                    <form>
+
+                        <div class="div-first-name">
+                            <i class="fas fa-user-alt i-f-name"></i>
+                            <input class="input-f-name" type="text" name="First Name" placeholder="First Name" required>
+                        </div>
+
+                        <div class="div-last-name">
+                            <i class="fas fa-user-alt i-l-name"></i>
+                            <input class="input-l-name" type="text" name="Last Name" placeholder="Last Name" required>
+                        </div>
+
+                        <div class="div-sign-email">
+                            <i class="fas fa-envelope sign-i-email"></i>
+                            <input class="sign-email" type="email" name="email" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="div-sign-password">
+                            <i class="fas fa-key sign-p-icon"></i>
+                            <input id="input-sign" class="sign-password" type="password" name="password" placeholder="Password" required>
+                            <span class="sign-spn" onclick="myFunction2()"> 
+                                  <i id="sign-open" class="fas fa-eye sign-i1"></i>
+                                  <i id="sign-close" class="fas fa-eye-slash sign-i2"></i>
+                       </span>
+                        </div>
+
+                        <div class="comfirm-password">
+                            <!-- <i class="fas fa-key sign-comfirm-icon"></i> -->
+                            <input class="sign-c-password" type="password" name="Comfirm Password" placeholder="Comfirm Password" required>
+                        </div>
+
+                        <div class="div-phone-number">
+                            <i class="fas fa-phone-alt sign-phone-icon"></i>
+                            <input class="input-phone-number" type="number" name="Phone Number" placeholder="Phone Number" required>
+                        </div>
+
+
+                        <!-- <div class="div-birth-date">
+                            <i class="fas fa-calendar-alt sign-birth-icon"></i>
+                            <lable class="lable-birth"> Date Of Birth </lable>
+                            <input class="input-birth-date" type="date" name="Birth Date" required>
+                        </div> -->
+
+
+                        <div class="div-address">
+                            <i class="fas fa-map-marker-alt sign-add-icon"></i>
+                            <input class="input-address" type="text" name="Address" placeholder="Address" required>
+                        </div>
+
+                        <button class="sign-btn "><a href="../website/index.html" class="a-btn-sign">Register</a></button>
+                    </form>
+
+                    <p class="p-having-acc">Alrady Have An Account ?</p>
+                    <a href="Login.html" class="a-having-acc ">Login</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="java.js"></script>
+</body>
+
+</html>

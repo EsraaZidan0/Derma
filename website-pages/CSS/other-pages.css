@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ------------------      login   --------------------- */
+
+.div-logo {
+    width: 7em;
+    height: 7em;
+    position: relative;
+    cursor: pointer;
+}
+
+.div-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.log-sec,
+.sign-sec {
+    background-image: url(../../website-Images/leather.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.log-parent,
+.sign-parent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.img-form-container {
+    width: 1000px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* flex-direction: column;
+justify-content: center;
+align-items: center; */
+}
+
+.log-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 650px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(135, 54, 0, .5);
+    border-bottom-left-radius: 15px;
+    border-start-start-radius: 15px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .5);
+}
+
+.log-img1 {
+    position: absolute;
+    background-image: url(../../website-Images/login.jpg);
+    background-size: cover;
+    /* background-position: center; */
+    width: 450px;
+    height: 650px;
+    top: 35px;
+    left: 1010px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom-right-radius: 15px;
+    border-start-end-radius: 15px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .5);
+}
+
+.log-email,
+.log-password {
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 40px;
+    border-bottom: 2px solid rgb(135, 54, 0);
+    background: none;
+    padding: 5px;
+    color: black;
+}
+
+.log-email {
+    top: 200px;
+    left: 50px;
+}
+
+.log-password {
+    top: 250px;
+    left: 50px;
+}
+
+.log-btn,
+.sign-btn,
+.f-pass-btn,
+.profile-btn {
+    position: absolute;
+    top: 400px;
+    left: 160px;
+    width: 250px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background: #873600;
+    color: black;
+    border-radius: 15px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+ ::placeholder {
+    color: black;
+}
+
+.log-btn:hover {
+    background: #E67E22;
+    color: #fff;
+}
+
+.log-btn {
+    left: 115px;
+}
+
+.a-log-forget-pass {
+    position: absolute;
+    top: 310px;
+    left: 50px;
+    text-decoration: none;
+    color: #873600;
+    font-weight: bold;
+}
+
+.p-not-having-acc,
+.a-not-having-acc {
+    position: absolute;
+    top: 470px;
+    left: 50px;
+    color: black;
+    font-size: 17px;
+}
+
+.a-not-having-acc {
+    left: 230px;
+    text-decoration: none;
+    color: #873600;
+    font-weight: bold;
+}
+
+.log-form-head,
+.sign-head {
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    font-size: 90px;
+    font-family: cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 5px solid black;
+    animation-name: log-change;
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+}
+
+.log-txt,
+.log-txt2,
+.log-txt3 {
+    position: absolute;
+    top: 280px;
+    left: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    font-family: cursive;
+    color: #7E5109;
+}
+
+.log-txt2 {
+    top: 370px;
+    left: 155px;
+}
+
+.log-txt3 {
+    top: 490px;
+    left: 250px;
+}
+
+.i-log {
+    position: absolute;
+    top: 510px;
+    left: 365px;
+    font-size: 30px;
+    color: #7E5109;
+}
+
+.a-btn-log {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes log-change {
+    0% {
+        color: black;
+    }
+    25% {
+        color: rgba(135, 54, 0);
+    }
+    50% {
+        color: #AF601A;
+    }
+    75% {
+        color: #B9770E;
+    }
+    100% {
+        color: black;
+    }
+}
+
+.i-email {
+    position: absolute;
+    top: 210px;
+    left: 30px;
+}
+
+.i-key {
+    position: absolute;
+    top: 260px;
+    left: 30px;
+}
+
+.spn-pass-eyes {
+    position: absolute;
+    top: 260px;
+    right: 60px;
+}
+
+#hide1-open-eye {
+    display: none;
+}
+
+
+/* ----------------------       signup        ------------------------- */
+
+.sign-img-form-container {
+    width: 1000px;
+    height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sign-form {
+    position: absolute;
+    top: 50%;
+    left: 48%;
+    width: 500px;
+    height: 700px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(135, 54, 0, .5);
+    border-bottom-left-radius: 15px;
+    border-start-start-radius: 15px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .5);
+}
+
+.sign-img {
+    position: absolute;
+    background-image: url(../../website-Images/register.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 700px;
+    top: 10px;
+    right: 40px;
+    border-bottom-right-radius: 15px;
+    border-start-end-radius: 15px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .5);
+}
+
+.input-f-name,
+.input-l-name,
+.sign-email,
+.sign-password,
+.sign-c-password,
+.input-phone-number,
+.input-birth-date,
+.input-address {
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 320px;
+    height: 35px;
+    border-bottom: 2px solid rgb(135, 54, 0);
+    background: none;
+    padding: 5px;
+    color: black;
+}
+
+.input-f-name {
+    top: 80px;
+    left: 70px;
+}
+
+.i-f-name {
+    position: absolute;
+    top: 87px;
+    left: 50px;
+}
+
+.input-l-name {
+    top: 139px;
+    left: 70px;
+}
+
+.i-l-name {
+    position: absolute;
+    top: 144px;
+    left: 50px;
+}
+
+.sign-email {
+    top: 200px;
+    left: 70px;
+}
+
+.sign-i-email {
+    position: absolute;
+    top: 209px;
+    left: 50px;
+}
+
+.sign-password {
+    top: 260px;
+    left: 70px;
+}
+
+.sign-p-icon {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+}
+
+.sign-spn {
+    position: absolute;
+    top: 270px;
+    right: 118px;
+}
+
+#sign-open {
+    display: none;
+}
+
+.sign-c-password {
+    top: 320px;
+    left: 70px;
+}
+
+
+/* .sign-comfirm-icon {
+position: absolute;
+top: 350px;
+left: 50px;
+} */
+
+.input-phone-number {
+    top: 380px;
+    left: 70px;
+}
+
+.sign-phone-icon {
+    position: absolute;
+    top: 390px;
+    left: 50px;
+}
+
+
+/* .lable-birth {
+    position: absolute;
+    top: 435px;
+    left: 75px;
+}
+
+.input-birth-date {
+    top: 455px;
+    left: 70px;
+}
+
+.sign-birth-icon {
+    position: absolute;
+    top: 435px;
+    left: 50px;
+} */
+
+.input-address {
+    top: 445px;
+    left: 70px;
+}
+
+.sign-add-icon {
+    position: absolute;
+    top: 450px;
+    left: 50px;
+}
+
+.sign-btn {
+    top: 550px;
+    left: 115px;
+}
+
+.sign-btn:hover {
+    background: #E67E22;
+    color: #fff;
+}
+
+.a-btn-sign {
+    text-decoration: none;
+    color: black;
+}
+
+.p-having-acc,
+.a-having-acc {
+    position: absolute;
+    top: 620px;
+    left: 70px;
+    color: black;
+    font-size: 17px;
+}
+
+.a-having-acc {
+    left: 259px;
+    text-decoration: none;
+    color: #873600;
+    font-weight: bold;
+}
+
+.sign-head {
+    font-size: 50px;
+}
+
+.sign-txt,
+.sign-txt2 {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 45px;
+    font-family: cursive;
+    color: #7E5109;
+}
+
+.sign-txt2 {
+    top: 300px;
+    left: 220px;
+}
+
+.i-sign {
+    position: absolute;
+    top: 315px;
+    left: 340px;
+    font-size: 40px;
+    color: #7E5109;
+}
+
+
+/* ------------------------  forget password  --------------------- */
+
+.forget-psaa-sec {
+    background-image: url(../../website-Images/beige-background-wallpaper-dripping-oil-border.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.forget-pass-parent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.div-form-f-pass {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 650px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(214, 138, 16, 0.3);
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .7);
+}
+
+.f-pass-input {
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 400px;
+    height: 40px;
+    border-bottom: 2px solid rgb(135, 54, 0);
+    background: none;
+    padding: 5px;
+    color: black;
+    top: 300px;
+    left: 40px;
+}
+
+.i-f-pass {
+    position: absolute;
+    left: 20px;
+    top: 310px;
+}
+
+.f-pass-btn {
+    left: 115px;
+}
+
+.f-pass-btn:hover {
+    background: #E67E22;
+    color: #fff;
+}
+
+.p2-f-pass,
+.a-nothave-acc {
+    position: absolute;
+    top: 500px;
+    left: 30px;
+    color: black;
+    font-size: 17px;
+}
+
+.a-nothave-acc {
+    left: 210px;
+    text-decoration: none;
+    color: #873600;
+    font-weight: bold;
+}
+
+.p1-f-pass {
+    position: absolute;
+    top: 230px;
+    left: 25px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.h2-f-pass {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #873600;
+}
+
+
+/* -------------------- Edit Profile ------------------------- */
+
+.profile-sec {
+    background-image: url(../../website-Images/beige-background-wallpaper-dripping-oil-border.jpg);
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile-parent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.profile-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 650px;
+    transform: translate(-50%, -50%);
+    background-color: rgba(214, 138, 16, 0.3);
+    border-radius: 15px;
+    box-shadow: 1px 1px 20px 2px rgba(0, 0, 0, .7);
+}
+
+.input-edit-f-name,
+.input-edit-l-name,
+.edit-email,
+.edit-password,
+.edit-c-password,
+.input-edit-phone,
+.input-edit-birth,
+.input-edit-address {
+    position: absolute;
+    outline: none;
+    border: none;
+    width: 320px;
+    height: 35px;
+    border-bottom: 2px solid rgb(135, 54, 0);
+    background: none;
+    padding: 5px;
+    color: black;
+}
+
+.input-edit-f-name {
+    top: 80px;
+    left: 70px;
+}
+
+.i-edit-f-name {
+    position: absolute;
+    top: 87px;
+    left: 50px;
+}
+
+.input-edit-l-name {
+    top: 139px;
+    left: 70px;
+}
+
+.i-edit-l-name {
+    position: absolute;
+    top: 144px;
+    left: 50px;
+}
+
+.edit-email {
+    top: 200px;
+    left: 70px;
+}
+
+.i-edit-email {
+    position: absolute;
+    top: 209px;
+    left: 50px;
+}
+
+.edit-password {
+    top: 260px;
+    left: 70px;
+}
+
+.edit-p-icon {
+    position: absolute;
+    top: 270px;
+    left: 50px;
+}
+
+.edit-spn {
+    position: absolute;
+    top: 270px;
+    right: 118px;
+}
+
+#edit-open {
+    display: none;
+}
+
+.edit-c-password {
+    top: 320px;
+    left: 70px;
+}
+
+.input-edit-phone {
+    top: 380px;
+    left: 70px;
+}
+
+.edit-phone-icon {
+    position: absolute;
+    top: 390px;
+    left: 50px;
+}
+
+
+/* .edit-lable-birth {
+    position: absolute;
+    top: 435px;
+    left: 75px;
+}
+
+.input-edit-birth {
+    top: 455px;
+    left: 70px;
+}
+
+.edit-birth-icon {
+    position: absolute;
+    top: 435px;
+    left: 50px;
+} */
+
+.input-edit-address {
+    top: 445px;
+    left: 70px;
+}
+
+.edit-add-icon {
+    position: absolute;
+    top: 453px;
+    left: 50px;
+}
+
+.profile-btn {
+    top: 550px;
+    left: 120px;
+}
+
+.profile-btn:hover {
+    background: #E67E22;
+    color: #fff;
+}
+
+.profile-head {
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #873600;
+}

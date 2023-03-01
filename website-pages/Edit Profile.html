@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/other-pages.css">
+</head>
+
+<body>
+    <!---------------------    Edit Profile   ------------------------>
+
+    <section class="profile-sec">
+
+        <div class="profile-parent">
+
+            <div class="div-logo">
+                <img src="../website-Images/Derma6.png" alt="">
+            </div>
+
+            <div class="profile-form">
+                <form>
+                    <h2 class="profile-head animate__animated animate__slideInDown">Edit Your Profile</h2>
+                    <div class="edit-first-name animate__animated animate__zoomIn">
+                        <i class="fas fa-user-alt i-edit-f-name"></i>
+                        <input class="input-edit-f-name" type="text" name="First Name" placeholder="First Name" required>
+                    </div>
+
+                    <div class="edit-last-name animate__animated animate__zoomIn">
+                        <i class="fas fa-user-alt i-edit-l-name"></i>
+                        <input class="input-edit-l-name" type="text" name="Last Name" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="div-edit-email animate__animated animate__zoomIn">
+                        <i class="fas fa-envelope i-edit-email"></i>
+                        <input class="edit-email" type="email" name="email" placeholder="Email Address" required>
+                    </div>
+
+                    <div class="div-edit-password animate__animated animate__zoomIn">
+                        <i class="fas fa-key edit-p-icon"></i>
+                        <input id="input-edit" class="edit-password" type="password" name="password" placeholder="Password" required>
+                        <span class="edit-spn" onclick="myFunction3()"> 
+                                  <i id="edit-open" class="fas fa-eye sign-i1"></i>
+                                  <i id="edit-close" class="fas fa-eye-slash sign-i2"></i>
+                       </span>
+                    </div>
+
+                    <div class="edit-comfirm-password animate__animated animate__zoomIn">
+                        <input class="edit-c-password" type="password" name="Comfirm Password" placeholder="Comfirm Password" required>
+                    </div>
+
+                    <div class="edit-phone-number animate__animated animate__zoomIn">
+                        <i class="fas fa-phone-alt edit-phone-icon"></i>
+                        <input class="input-edit-phone" type="number" name="Phone Number" placeholder="Phone Number" required>
+                    </div>
+
+
+                    <!-- <div class="edit-birth-date animate__animated animate__zoomIn">
+                        <i class="fas fa-calendar-alt edit-birth-icon"></i>
+                        <lable class="edit-lable-birth"> Date Of Birth </lable>
+                        <input class="input-edit-birth" type="date" name="Birth Date" required>
+                    </div> -->
+
+
+                    <div class="edit-address animate__animated animate__zoomIn">
+                        <i class="fas fa-map-marker-alt edit-add-icon"></i>
+                        <input class="input-edit-address" type="text" name="Address" placeholder="Address" required>
+                    </div>
+
+                    <input class="profile-btn animate__animated animate__zoomIn" type="submit" value="Save">
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="java.js"></script>
+</body>
+
+</html>
